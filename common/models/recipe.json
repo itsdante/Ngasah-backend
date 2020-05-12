@@ -1,0 +1,33 @@
+{
+  "name": "Recipe",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "recipe_name": {
+      "type": "string",
+      "required": true
+    },
+    "recipe_detail": {
+      "type": "string"
+    },
+    "recipe_image": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "procedures": {
+      "type": "hasMany",
+      "model": "Procedure",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

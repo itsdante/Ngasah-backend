@@ -1,38 +1,40 @@
 {
-  "_meta": {
-    "sources": [
-      "loopback/common/models",
-      "loopback/server/models",
-      "../common/models",
-      "./models"
-    ],
-    "mixins": [
-      "loopback/common/mixins",
-      "loopback/server/mixins",
-      "../common/mixins",
-      "./mixins"
-    ]
-  },
   "User": {
-    "dataSource": "db"
+    "dataSource": "postgres"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "postgres",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "postgres",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "postgres",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "postgres",
     "public": false
+  },
+  "Recipe": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Ingredient": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Procedure": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Training_Log": {
+    "dataSource": "postgres",
+    "public": true
   }
 }
