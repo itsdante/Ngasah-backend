@@ -36,5 +36,9 @@
   "Training_Log": {
     "dataSource": "postgres",
     "public": true
+  },
+  "Login_Log": {
+    "dataSource": "postgres",
+    "public": true
   }
 }
