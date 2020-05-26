@@ -22,7 +22,7 @@
   "relations": {
     "procedure": {
       "type": "belongsTo",
-      "model": "Procedure",
+      "model": "Recipe",
       "foreignKey": "",
       "options": {
         "nestRemoting": true

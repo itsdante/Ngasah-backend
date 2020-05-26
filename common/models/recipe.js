@@ -68,4 +68,5 @@ module.exports = function(Recipe) {
             }
           });
         };
+    // Recipe.home = (req)
 };
