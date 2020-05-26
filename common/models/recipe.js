@@ -1,5 +1,10 @@
 'use strict';
 
+const AWS = require('aws-sdk');
+const multer = require('multer');
+const multerS3 = require('multer-s3');
+
+
 module.exports = function(Recipe) {
     Recipe.upload = (id, req, res, cb) => {
           AWS.config.update({
